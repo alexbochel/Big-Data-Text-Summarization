@@ -1,0 +1,24 @@
+	• Copying files from hadoop: 
+		○ scp -p 2222 cs4984cs5984f18_team5@hadoop.dlib.vt.edu:5_Local_Election/Local_Election.warc.gz .
+
+	• Solr Login: 
+		○ ssh cs4984cs5984f18_team5@blacklight.cs.vt.edu
+
+	• Hadoop Login: 
+		○ ssh cs4984cs5984f18_team5@hadoop.dlib.vt.edu -p 2222
+
+	• Start Python on Hadoop: 
+		○ python
+
+	• Start Python on Hadoop with python 2.7: 
+		○ python2.7
+
+	• Run typical terminal command on hadoop: 
+		○ hadoop fs -*command*
+
+	• Run Python File: 
+		○ hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-0.20-mapreduce/contrib/streaming/hadoop-streaming-2.6.0-mr1-cdh5.12.0.jar -mapper mapper.py -reducer reducer.py -input data/ -output output4/ -file mapper.py -file reducer.py
+		○ hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-0.20-mapreduce/contrib/streaming/hadoop-streaming-2.6.0-mr1-cdh5.12.0.jar -mapper mapper2.py -reducer reducer.py -input data/ -output output_nltk2/ -file mapper2.py -file reducer.py -file nltk.mod -cacheArchive U2/nltk_data.zip#nltkData
+		
+
+	• Password: fox@vt.edu
