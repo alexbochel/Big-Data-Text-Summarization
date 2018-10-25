@@ -9,4 +9,3 @@ with open('cleaned_big.json') as f:
 		if sentences != "" and ("quake" in sentences.lower() or "zealand" in sentences.lower()):
 			data_list.append(data)
 			print(json.dumps(data))
-	print(len(data_list))
